@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sweet Crust Bakery - Artisan breads, pastries, and custom cakes made fresh daily with locally sourced ingredients">
+    <title>Sweet Crust Bakery | Fresh Artisan Bakery</title>
+    
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="images/hero-bakery.jpg" as="image">
+</head>
+<body>
+    <header class="main-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-mark">🍞</div>
+                <h1>Sweet Crust</h1>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Products</h1>
+                <p>Freshly baked delights for every taste and occasion</p>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="product-categories">
+            <div class="container">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="bread">Artisan Breads</button>
+                    <button class="filter-btn" data-filter="pastry">Pastries</button>
+                    <button class="filter-btn" data-filter="cake">Custom Cakes</button>
+                    <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Bread Products -->
+                    <div class="product-card" data-category="bread">
+                        <div class="product-image">
+                            <img src="images/products/sourdough-bread.jpg" alt="Artisan Sourdough Bread" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Artisan Sourdough</h3>
+                            <p>Traditional 24-hour fermented sourdough with crispy golden crust and soft, airy interior</p>
+                            <div class="product-meta">
+                                <span class="product-price">R45</span>
+                                <span class="product-category">Bread</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="bread">
+                        <div class="product-image">
+                            <img src="images/products/wholewheat-bread.jpg" alt="Whole Wheat Bread" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Whole Wheat Loaf</h3>
+                            <p>Nutritious whole wheat bread with honey and seeds, perfect for healthy sandwiches</p>
+                            <div class="product-meta">
+                                <span class="product-price">R38</span>
+                                <span class="product-category">Bread</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pastry Products -->
+                    <div class="product-card" data-category="pastry">
+                        <div class="product-image">
+                            <img src="images/products/croissants.jpg" alt="Butter Croissants" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Butter Croissants</h3>
+                            <p>Flaky, buttery layers made with French-style techniques and premium butter</p>
+                            <div class="product-meta">
+                                <span class="product-price">R25</span>
+                                <span class="product-category">Pastry</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="pastry">
+                        <div class="product-image">
+                            <img src="images/products/danish-pastry.jpg" alt="Fruit Danish Pastry" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Fruit Danish</h3>
+                            <p>Buttery pastry with cream cheese filling and seasonal fruit topping</p>
+                            <div class="product-meta">
+                                <span class="product-price">R32</span>
+                                <span class="product-category">Pastry</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cake Products -->
+                    <div class="product-card" data-category="cake">
+                        <div class="product-image">
+                            <img src="images/products/custom-cake.jpg" alt="Custom Celebration Cake" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Celebration Cakes</h3>
+                            <p>Custom-designed cakes for birthdays, weddings, and special occasions</p>
+                            <div class="product-meta">
+                                <span class="product-price">From R280</span>
+                                <span class="product-category">Cake</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seasonal Products -->
+                    <div class="product-card" data-category="seasonal">
+                        <div class="product-image">
+                            <img src="images/products/seasonal-special.jpg" alt="Seasonal Special Pastries" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Seasonal Fruit Tart</h3>
+                            <p>Butter shortcrust pastry with vanilla custard and fresh seasonal fruits</p>
+                            <div class="product-meta">
+                                <span class="product-price">R45</span>
+                                <span class="product-category">Seasonal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Place an Order?</h2>
+                <p>Visit us in-store or contact us to discuss custom orders and catering</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sweet Crust Bakery</h3>
+                    <p>Fresh artisan baked goods made daily with locally sourced ingredients and traditional techniques.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Bakery Street, Cape Town</p>
+                    <p>📞 (021) 123-4567</p>
+                    <p>✉️ hello@sweetcrust.co.za</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Crust Bakery. All rights reserved. | Website created as academic project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

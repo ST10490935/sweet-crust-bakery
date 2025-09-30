@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery of Sweet Crust Bakery's creations - custom cakes, artisan breads, and beautiful pastries">
+    <title>Gallery - Sweet Crust Bakery | Our Creations</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header class="main-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-mark">🍞</div>
+                <h1>Sweet Crust</h1>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Gallery</h1>
+                <p>A visual journey through our delicious creations</p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-filters">
+                    <button class="gallery-filter active" data-filter="all">All Work</button>
+                    <button class="gallery-filter" data-filter="cakes">Custom Cakes</button>
+                    <button class="gallery-filter" data-filter="breads">Artisan Breads</button>
+                    <button class="gallery-filter" data-filter="pastries">Pastries</button>
+                    <button class="gallery-filter" data-filter="events">Special Events</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Cake Images -->
+                    <div class="gallery-item" data-category="cakes">
+                        <img src="images/gallery/wedding-cake.jpg" alt="Elegant Wedding Cake" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Wedding Celebration</h3>
+                            <p>Three-tier vanilla cake with buttercream flowers</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="cakes">
+                        <img src="images/gallery/birthday-cake.jpg" alt="Colorful Birthday Cake" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Birthday Special</h3>
+                            <p>Chocolate cake with rainbow sprinkles</p>
+                        </div>
+                    </div>
+
+                    <!-- Bread Images -->
+                    <div class="gallery-item" data-category="breads">
+                        <img src="images/gallery/bread-assortment.jpg" alt="Fresh Bread Assortment" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Daily Bread Selection</h3>
+                            <p>Fresh from the oven morning bake</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="breads">
+                        <img src="images/gallery/sourdough-loaves.jpg" alt="Sourdough Bread Loaves" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Sourdough Collection</h3>
+                            <p>Traditional fermented artisan bread</p>
+                        </div>
+                    </div>
+
+                    <!-- Pastry Images -->
+                    <div class="gallery-item" data-category="pastries">
+                        <img src="images/gallery/pastry-display.jpg" alt="Pastry Display Case" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Morning Pastries</h3>
+                            <p>Fresh croissants, danishes, and muffins</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="pastries">
+                        <img src="images/gallery/dessert-tray.jpg" alt="Dessert Tray" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Afternoon Treats</h3>
+                            <p>Selection of cakes and desserts</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Images -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/gallery/corporate-event.jpg" alt="Corporate Event Catering" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Corporate Catering</h3>
+                            <p>Pastry platter for business event</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/gallery/bakery-interior.jpg" alt="Bakery Interior" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Our Bakery</h3>
+                            <p>Warm and welcoming store atmosphere</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sweet Crust Bakery</h3>
+                    <p>Fresh artisan baked goods made daily with locally sourced ingredients and traditional techniques.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Bakery Street, Cape Town</p>
+                    <p>📞 (021) 123-4567</p>
+                    <p>✉️ hello@sweetcrust.co.za</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Crust Bakery. All rights reserved. | Website created as academic project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
