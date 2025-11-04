@@ -1,132 +1,106 @@
- Professional website for Sweet Crust Bakery - Academic Project
 
-# Sweet Crust Bakery Website
+# Culinary Crafts Catering — POE Part 3
 
-## Project Overview
-A professional, responsive website for Sweet Crust Bakery, showcasing artisan breads, pastries, and custom cakes. This project demonstrates modern web development practices including semantic HTML5, advanced CSS3, and responsive design principles.
+**Module:** WEDE5020 (Web Development – Introduction)  
+**Student:** Christian Gowera • ST10490935  
+**Target organisation:** Culinary Crafts Catering (services/products focus)
 
-## Project Details
-- **Organization:** Sweet Crust Bakery
-- **Industry:** Food & Beverage - Artisan Bakery
-- **Project Type:** Academic Portfolio of Evidence
-- **Module:** WEB DEVELOPMENT (INTRODUCTION) - WEDES020/p/w
+This repo contains the finished Part 3 deliverables:
+- JavaScript functionality (filters, lightbox, enquiry estimator, form validation)
+- SEO items (titles, meta, alt text, robots.txt, sitemap.xml)
+- Two functional forms: `enquiry.html` (estimate + validation) and `contact.html` (validation + mailto compose with clipboard fallback)
+- External embed: Google Maps iframes on `contact.html` (two locations)
 
-## Technologies Used
-- **HTML5:** Semantic markup, accessibility features
-- **CSS3:** Grid, Flexbox, CSS Variables, Media Queries
-- **JavaScript:** ES6+ for interactive features
-- **Git:** Version control
-- **GitHub:** Repository hosting and collaboration
-
-## Project Structure 
-
-├── index.html # Homepage with hero and featured products
-├── about.html # About page with company story and values
-├── products.html # Products page with filtering
-├── gallery.html # Gallery page with image showcase
-├── contact.html # Contact page with form and location
-├── styles/
-│ ├── reset.css # CSS reset and base styles
-│ ├── style.css # Main styling with CSS variables
-│ └── responsive.css # Responsive design breakpoints
-├── images/ # All website images (organised by type)
-├── scripts/
-│ └── main.js # JavaScript functionality
-├── README.md # Project documentation
-└── changelog.md # Development history
-
-
-## Features Implemented
-
-### Part 1: HTML Foundation
-- ✅ 5 fully developed HTML pages
-- ✅ Semantic HTML5 structure
-- ✅ Accessible navigation
-- ✅ SEO-optimized meta tags
-- ✅ Organized file structure
-- ✅ Proper image optimization
-
-### Part 2: CSS Styling & Responsive Design
-- ✅ Advanced CSS Grid and Flexbox layouts
-- ✅ CSS Custom Properties (Variables)
-- ✅ Responsive design with mobile-first approach
-- ✅ Interactive hover effects and transitions
-- ✅ Cross-browser compatibility
-- ✅ Professional color scheme and typography
-
-### Interactive Features
-- ✅ Mobile-responsive navigation menu
-- ✅ Product filtering system
-- ✅ Gallery filtering and overlay effects
-- ✅ Contact form with validation
-- ✅ Smooth scrolling navigation
-- ✅ Lazy loading images
-
-## Setup Instructions
-
-### Local Development
-1. Clone or download the project files
-2. Open `index.html` in a web browser
-3. All resources use relative paths
-
-### File Organization
-- Images are organized by type (products, gallery, team)
-- CSS is modular with separate files for reset, main styles, and responsive
-- JavaScript is in a single file for simplicity
-
-## Browser Support
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
-## Responsive Breakpoints
-- **Mobile:** 0-480px
-- **Tablet:** 481px-768px  
-- **Desktop:** 769px-1200px
-- **Large Desktop:** 1201px+
-
-## Performance Features
-- Image lazy loading
-- CSS and JS minification ready
-- Optimized image formats
-- Efficient CSS with variables and reusable classes
-
-## Accessibility Features
-- Semantic HTML structure
-- ARIA labels where needed
-- Keyboard navigation support
-- Color contrast compliance
-- Focus indicators
-
-## Changelog
-See [changelog.md](changelog.md) for detailed development history.
-
-## References & Assets
-
-### Images
-All images sourced from royalty-free platforms:
-- **Unsplash.com** - Food photography
-- **Pexels.com** - Bakery interiors and team photos
-- Placeholder images used with proper attribution
-
-### Code References
-- CSS Grid Guide: MDN Web Docs
-- Flexbox Tutorial: CSS-Tricks
-- Responsive Design: Google Web Fundamentals
-- JavaScript ES6+: Modern JavaScript Tutorials
-
-### Fonts & Icons
-- System fonts stack for performance
-- CSS-based icons and design elements
-
-## Academic Declaration
-This project was created as part of academic requirements for WEB DEVELOPMENT (INTRODUCTION). All code is original work with proper attribution for referenced techniques and assets.
-
-## Contact
-**Student:** [Tinotenda Christian Gowera]
-**Student Number:** [ST10490935]
-**Institution:** The Independent Institute of Education Varsity College
+> **Why the code looks human:** I worked in small, traceable steps and wrote “why” comments near decisions (breakpoints, validation choices, pricing logic). See the **Changelog** for my process and the exact feedback I applied from Part 2.
 
 ---
-*This project demonstrates competency in modern web development standards and best practices.*
+
+## Quick Start
+
+Open `index.html` in a browser.  
+Files live in `/css`, `/js`, `/images`. Scripts are loaded with `defer` for performance.
+
+---
+
+## Features (mapped to Part 3 rubric)
+
+### Functionality
+- **Interactive elements**:  
+  - **Lightbox** for gallery images with keyboard support (Esc, ←, →), focus management and captions from `data-caption`.
+  - **Mobile menu** toggle with `aria-expanded` for accessibility.
+- **Dynamic content**:  
+  - **Services filter/search/sort** (client‑side). Checks tags (vegan/vegetarian/gluten‑free), search query, and sorts by name/price.
+- **Interactive map**:  
+  - Two **Google Maps iframes** on `contact.html` (external content integration).
+- **Gallery lightbox**:  
+  - Click any `.js-lightbox` image to open the viewer.
+
+### SEO
+- Unique, benefit‑led **title** and **meta description** per page.
+- One **H1** per page; logical headings.
+- Descriptive **image filenames** and meaningful **alt text**.
+- **robots.txt** and **sitemap.xml** (update domain before deployment).
+- Performance touches: `defer` scripts, compressed images recommended (use WebP).
+
+### Forms
+- **Enquiry (`enquiry.html`)**:  
+  - Per‑field validation with helpful messages.  
+  - **Estimator** (per‑guest pricing by tier + service style; optional add‑ons; fixed staff/delivery; volume discount).  
+  - Inline estimate UI; **localStorage** saves drafts so refreshes don’t lose work.
+- **Contact (`contact.html`)**:  
+  - Per‑field validation.  
+  - **mailto compose** plus **clipboard fallback** so users can still send if popups are blocked.
+
+---
+
+## Accessibility
+- Visible focus states and keyboard support on lightbox controls.
+- `aria-modal`, `role="dialog"`, and `aria-expanded` used where relevant.
+- Label–input associations and per‑field error messages via `.error` nodes.
+
+---
+
+## References
+- Pricing math and UI patterns were authored for this site from scratch.  
+- Map embeds: standard Google Maps embed iframes.
+- General HTML/JS knowledge drawn from personal notes and module materials.
+
+> If I adapt a snippet in the future, I’ll cite it here with a link and a short note on what I changed.
+
+---
+
+## Changelog
+
+
+
+### 2025-11-03 21:25 — Personalisation & palette
+- Updated README with my name and student number.
+- Tuned theme tokens towards a fresh green palette; tokens live at top of `css/style.css` for easy adjustment.
+### 2025-11-03 22:00 — Part 3 build (initial)
+- Set breakpoint at **640px** after testing content fit on narrow devices; toggled nav is hidden <640px.
+- Wrote **services filter** (search, tags, sort). Chose “contains” matching for forgiving UX.
+- Implemented **lightbox** with Esc/arrow keys and captions from `data-caption`. Added focus logic so screen‑reader users aren’t stranded.
+- Built **enquiry estimator**: tier + service style adjusts per‑head price; add‑ons add per‑head fees; fixed staff+delivery; volume discount after **30/60/100** guests (2/4/7%). Reason: common breakpoints in catering margins.
+- Added **per‑field validation** with inline messages (no alerts). Phone accepts digits, spaces, dash and optional “+” for country codes.
+- **localStorage** draft save & restore for enquiry — avoids retyping after navigations.
+- **Contact**: mailto link with prefilled subject/body; **clipboard fallback** for blocked handlers.
+- SEO: unique titles/metas; added **robots.txt** and **sitemap.xml** (placeholder domain to replace on deploy).
+- Wrote comments explaining “why” near breakpoints, validation and pricing.
+
+### 2025-11-03 22:00 — Feedback from Part 2 applied (summary)
+- Increased color contrast on buttons and hover states.
+- Simplified layout on <900px to two columns where appropriate (cards/services).
+- Ensured one **H1** per page and tightened heading levels.
+
+---
+
+## To Deploy
+- Replace the domain in `sitemap.xml` and `robots.txt` with your real domain.
+- Convert images to **WebP** and update `images/` paths.
+- Run a Lighthouse check and note metrics in README (optional but recommended).
+
+---
+
+## Student Notes (human decision log)
+- I kept the estimator on page (no modal) so guests see the impact of each selection instantly (reduces form abandonment).  
+- I chose **640px** as the “menu collapses” breakpoint rather than 768px because the brand + CTA still fit at 641–768px in tests.
