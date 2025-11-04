@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquiry & Instant Estimate | Culinary Crafts Catering</title>
+  <meta name="description" content="Estimate your catering costs for buffet, plated or canapé service. Choose tier and add-ons for a quick budget.">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  
+<header>
+  <div class="container navbar" role="navigation" aria-label="Primary">
+    <a class="brand" href="index.html"><span class="brand-logo"></span> Culinary Crafts Catering</a>
+    <button class="btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav id="nav-links" class="nav-links">
+      <a href="index.html" class="">Home</a>
+      <a href="services.html" class="">Services</a>
+      <a href="enquiry.html" class="active">Enquiry</a>
+      <a href="contact.html" class="">Contact</a>
+      <a href="about.html" class="">About</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    
+<h1>Get an Instant Estimate</h1>
+<p class="muted">Answer a few questions and we’ll show a same‑day estimate. You can fine‑tune later with our coordinator.</p>
+
+<form id="enquiry-form" novalidate>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="client_name">Your name</label>
+      <input id="client_name" name="client_name" autocomplete="name" required>
+      <div class="help">We’ll use this when we email your quote.</div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel">
+      <div class="help">Include country code if international (e.g. +65, +27).</div>
+    </div>
+    <div class="form-group">
+      <label for="headcount">Guest count</label>
+      <input id="headcount" name="headcount" type="number" min="1" step="1" required>
+    </div>
+  </div>
+
+  <div class="form-row-3">
+    <div class="form-group">
+      <label for="service">Service style</label>
+      <select id="service" name="service">
+        <option value="buffet">Buffet</option>
+        <option value="plated">Plated</option>
+        <option value="canapes">Canapés</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="tier">Menu tier</label>
+      <select id="tier" name="tier">
+        <option value="standard">Standard</option>
+        <option value="premium">Premium</option>
+        <option value="deluxe">Deluxe</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Add‑ons</label>
+      <div>
+        <label><input type="checkbox" name="addons" value="dessert"> Desserts</label>
+        <label><input type="checkbox" name="addons" value="beverages"> Beverages</label>
+        <label><input type="checkbox" name="addons" value="decor"> Decor</label>
+      </div>
+    </div>
+  </div>
+
+  <div id="quote-output" class="card"></div>
+
+  <button class="btn btn-primary" type="submit">Save enquiry</button>
+</form>
+
+<div class="notice">We typically reply within one business day with a refined quote and sample menu.</div>
+
+  </main>
+  <footer>
+    <div class="container cols">
+      <div>
+        <h3>We cater with care</h3>
+        <p class="muted">From boardroom lunches to 200‑guest weddings. Fresh, seasonal menus and warm, polished service.</p>
+        <div class="kpi">
+          <div><strong>1.5k+</strong><br><span class="muted">events served</span></div>
+          <div><strong>98%</strong><br><span class="muted">on‑time delivery</span></div>
+          <div><strong>4.8★</strong><br><span class="muted">average rating</span></div>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="robots.txt">Robots</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+<div id="lightbox-backdrop" class="lightbox-backdrop" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lightbox">
+    <div class="controls">
+      <button type="button" data-prev aria-label="Previous image">◀</button>
+      <div class="caption"></div>
+      <button type="button" data-close aria-label="Close viewer">✕</button>
+      <button type="button" data-next aria-label="Next image">▶</button>
+    </div>
+    <img src="" alt="">
+  </div>
+</div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

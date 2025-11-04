@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://culinarycrafts.example/sitemap.xml

@@ -1,0 +1,19 @@
+Culinary Crafts Catering — Part 3 Merge Notes
+Timestamp: 2025-11-03T21:22:32.198313
+Detected user webroot: /mnt/data/merge_workspace/user_project/WEBD POE
+
+Changes:
+- Added/Updated: index.html
+- Added/Updated: services.html
+- Added/Updated: enquiry.html
+- Added/Updated: contact.html
+- Added/Updated: about.html
+- Added/Updated: css
+- Added/Updated: js
+- Replaced folder: images (backup at _backup_before_part3/images)
+- Added/Updated: robots.txt
+- Added/Updated: sitemap.xml
+- Added/Updated: README.md
+
+Backup of any overwritten files/folders is stored in _backup_before_part3/ at the webroot.
+Update README.md with your name and student number. Replace domain in robots.txt/sitemap.xml on deploy.

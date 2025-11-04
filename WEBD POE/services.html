@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services & Menus | Culinary Crafts Catering</title>
+  <meta name="description" content="Explore buffet, plated and canapé catering options with dietary tags. Filter, search and sort to plan your event.">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  
+<header>
+  <div class="container navbar" role="navigation" aria-label="Primary">
+    <a class="brand" href="index.html"><span class="brand-logo"></span> Culinary Crafts Catering</a>
+    <button class="btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav id="nav-links" class="nav-links">
+      <a href="index.html" class="">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="enquiry.html" class="">Enquiry</a>
+      <a href="contact.html" class="">Contact</a>
+      <a href="about.html" class="">About</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    
+<h1>Services & Menus</h1>
+<p class="muted">Filter by style or search by name. Sort to compare pricing.</p>
+<div class="filters">
+  <input type="search" data-search placeholder="Search services e.g. buffet, wedding">
+  <select data-sort aria-label="Sort services">
+    <option value="name-asc">Name (A→Z)</option>
+    <option value="name-desc">Name (Z→A)</option>
+    <option value="price-asc">Price (low→high)</option>
+    <option value="price-desc">Price (high→low)</option>
+  </select>
+  <label><input type="checkbox" data-tag value="vegetarian"> Vegetarian</label>
+  <label><input type="checkbox" data-tag value="vegan"> Vegan</label>
+  <label><input type="checkbox" data-tag value="gluten-free"> Gluten‑free</label>
+</div>
+
+<div class="service-list" data-service-list>
+  <article class="service" data-name="Seasonal Buffet" data-price="22" data-tags="vegetarian,gluten-free">
+    <img class="js-lightbox" src="images/buffet.jpg" alt="Buffet table with seasonal dishes" data-caption="Seasonal Buffet">
+    <div class="body">
+      <h3>Seasonal Buffet</h3>
+      <div class="price">$22 / guest (from)</div>
+      <p>Generous spread with salads, mains and sides. Great for mixed groups.</p>
+      <div class="tags"><span class="badge">Vegetarian</span><span class="badge">Gluten‑free</span></div>
+    </div>
+  </article>
+
+  <article class="service" data-name="Plated Dining" data-price="32" data-tags="gluten-free">
+    <img class="js-lightbox" src="images/plated.jpg" alt="Plated main course" data-caption="Plated Dining">
+    <div class="body">
+      <h3>Plated Dining</h3>
+      <div class="price">$32 / guest (from)</div>
+      <p>Formal courses, coordinated timing and refined service.</p>
+      <div class="tags"><span class="badge">Gluten‑free</span></div>
+    </div>
+  </article>
+
+  <article class="service" data-name="Canapés & Bites" data-price="18" data-tags="vegetarian,vegan">
+    <img class="js-lightbox" src="images/canapes.jpg" alt="Assorted canapés" data-caption="Canapés & Bites">
+    <div class="body">
+      <h3>Canapés & Bites</h3>
+      <div class="price">$18 / guest (from)</div>
+      <p>Perfect for launches and networking events. Bite‑sized, roaming service.</p>
+      <div class="tags"><span class="badge">Vegetarian</span><span class="badge">Vegan</span></div>
+    </div>
+  </article>
+</div>
+
+  </main>
+  <footer>
+    <div class="container cols">
+      <div>
+        <h3>We cater with care</h3>
+        <p class="muted">From boardroom lunches to 200‑guest weddings. Fresh, seasonal menus and warm, polished service.</p>
+        <div class="kpi">
+          <div><strong>1.5k+</strong><br><span class="muted">events served</span></div>
+          <div><strong>98%</strong><br><span class="muted">on‑time delivery</span></div>
+          <div><strong>4.8★</strong><br><span class="muted">average rating</span></div>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="robots.txt">Robots</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+<div id="lightbox-backdrop" class="lightbox-backdrop" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lightbox">
+    <div class="controls">
+      <button type="button" data-prev aria-label="Previous image">◀</button>
+      <div class="caption"></div>
+      <button type="button" data-close aria-label="Close viewer">✕</button>
+      <button type="button" data-next aria-label="Next image">▶</button>
+    </div>
+    <img src="" alt="">
+  </div>
+</div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

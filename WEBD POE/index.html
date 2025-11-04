@@ -1,152 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sweet Crust Bakery - Artisan breads, pastries, and custom cakes made fresh daily with locally sourced ingredients">
-    <title>Sweet Crust Bakery | Fresh Artisan Bakery</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Culinary Crafts Catering | Fresh, seasonal menus & events</title>
+  <meta name="description" content="Catering for teams, weddings and private events. Buffet, plated or canapés with desserts, beverages and decor add‑ons.">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="main-header">
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <div class="logo-mark">🍞</div>
-                <h1>Sweet Crust</h1>
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+  
+<header>
+  <div class="container navbar" role="navigation" aria-label="Primary">
+    <a class="brand" href="index.html"><span class="brand-logo"></span> Culinary Crafts Catering</a>
+    <button class="btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav id="nav-links" class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html" class="">Services</a>
+      <a href="enquiry.html" class="">Enquiry</a>
+      <a href="contact.html" class="">Contact</a>
+      <a href="about.html" class="">About</a>
     </nav>
+  </div>
 </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2 class="hero-title">Freshly Baked Daily with Love</h2>
-            <p class="hero-subtitle">Artisan breads, decadent pastries, and custom cakes made from the finest locally sourced ingredients</p>
-            <div class="hero-buttons">
-                <a href="products.html" class="btn btn-primary">View Our Products</a>
-                <a href="contact.html" class="btn btn-secondary">Visit Us Today</a>
-            </div>
+  <main class="container">
+    
+<section class="hero">
+  <div>
+    <h1>Fresh, seasonal catering for teams, weddings & private events</h1>
+    <p>We craft menus around your guests and venue. Pick buffet, plated or canapé service, then add desserts, beverages and decor as needed.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="enquiry.html">Get an instant estimate</a>
+      <a class="btn btn-outline" href="services.html">Browse services</a>
+    </div>
+    <div class="kpi">
+      <div class="badge">Licensed & insured</div>
+      <div class="badge">Dietary options available</div>
+      <div class="badge">Eco‑friendly packaging</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Why clients book us</h3>
+    <ul>
+      <li>Menu tastings for large events</li>
+      <li>Transparent per‑guest pricing</li>
+      <li>Dedicated on‑site event lead</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Popular menus</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <img class="js-lightbox" src="images/buffet.jpg" alt="Abundant buffet with salads and roast vegetables" data-caption="Seasonal Buffet">
+      <h3>Seasonal Buffet</h3>
+      <p class="muted">Flexible and generous for mixed dietary groups.</p>
+    </div>
+    <div class="card">
+      <img class="js-lightbox" src="images/plated.jpg" alt="Plated mains with garnish" data-caption="Plated Dining">
+      <h3>Plated Dining</h3>
+      <p class="muted">Refined service for formal occasions.</p>
+    </div>
+    <div class="card">
+      <img class="js-lightbox" src="images/canapes.jpg" alt="Assorted canapés on slates" data-caption="Canapés">
+      <h3>Canapés</h3>
+      <p class="muted">Bite‑sized, roaming service for launches.</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer>
+    <div class="container cols">
+      <div>
+        <h3>We cater with care</h3>
+        <p class="muted">From boardroom lunches to 200‑guest weddings. Fresh, seasonal menus and warm, polished service.</p>
+        <div class="kpi">
+          <div><strong>1.5k+</strong><br><span class="muted">events served</span></div>
+          <div><strong>98%</strong><br><span class="muted">on‑time delivery</span></div>
+          <div><strong>4.8★</strong><br><span class="muted">average rating</span></div>
         </div>
-    </section>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="robots.txt">Robots</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+<div id="lightbox-backdrop" class="lightbox-backdrop" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lightbox">
+    <div class="controls">
+      <button type="button" data-prev aria-label="Previous image">◀</button>
+      <div class="caption"></div>
+      <button type="button" data-close aria-label="Close viewer">✕</button>
+      <button type="button" data-next aria-label="Next image">▶</button>
+    </div>
+    <img src="" alt="">
+  </div>
+</div>
 
-    <!-- Featured Products Section -->
-    <section class="featured-products">
-        <div class="container">
-            <h2 class="section-title">Our Signature Creations</h2>
-            <p class="section-subtitle">Handcrafted with traditional techniques and modern creativity</p>
-            
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/sourdough-bread.jpg" alt="Artisan Sourdough Bread" loading="lazy">
-                    </div>
-                    <div class="product-info">
-                        <h3>Artisan Sourdough</h3>
-                        <p>Traditional 24-hour fermented sourdough with crispy crust and soft interior</p>
-                        <span class="product-price">R45</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/croissants.jpg" alt="Butter Croissants" loading="lazy">
-                    </div>
-                    <div class="product-info">
-                        <h3>Butter Croissants</h3>
-                        <p>Flaky, buttery layers made with French-style techniques</p>
-                        <span class="product-price">R25</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/custom-cake.jpg" alt="Custom Celebration Cake" loading="lazy">
-                    </div>
-                    <div class="product-info">
-                        <h3>Custom Cakes</h3>
-                        <p>Beautifully designed celebration cakes for all occasions</p>
-                        <span class="product-price">From R280</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/seasonal-special.jpg" alt="Seasonal Special Pastries" loading="lazy">
-                    </div>
-                    <div class="product-info">
-                        <h3>Seasonal Specials</h3>
-                        <p>Rotating selection of seasonal pastries and desserts</p>
-                        <span class="product-price">From R35</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Preview Section -->
-    <section class="about-preview">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Our Story</h2>
-                    <p>Founded in 2020, Sweet Crust Bakery began as a passion project in a home kitchen. Today, we're proud to serve our community with authentic artisan baked goods made using traditional methods and the finest ingredients.</p>
-                    <p>Every product is crafted with attention to detail and a commitment to quality that you can taste in every bite.</p>
-                    <a href="about.html" class="btn btn-outline">Learn Our Story</a>
-                </div>
-                <div class="about-image">
-                    <img src="images/team/bakery-team.jpg" alt="Our Bakery Team" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Sweet Crust Bakery</h3>
-                    <p>Fresh artisan baked goods made daily with locally sourced ingredients and traditional techniques.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>📍 123 Bakery Street, Cape Town</p>
-                    <p>📞 (021) 123-4567</p>
-                    <p>✉️ hello@sweetcrust.co.za</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Sweet Crust Bakery. All rights reserved. | Website created as academic project</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="scripts/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
