@@ -11,8 +11,6 @@ This repo contains the finished Part 3 deliverables:
 - Two functional forms: `enquiry.html` (estimate + validation) and `contact.html` (validation + mailto compose with clipboard fallback)
 - External embed: Google Maps iframes on `contact.html` (two locations)
 
-> **Why the code looks human:** I worked in small, traceable steps and wrote “why” comments near decisions (breakpoints, validation choices, pricing logic). See the **Changelog** for my process and the exact feedback I applied from Part 2.
-
 ---
 
 ## Quick Start
@@ -101,6 +99,6 @@ Files live in `/css`, `/js`, `/images`. Scripts are loaded with `defer` for perf
 
 ---
 
-## Student Notes (human decision log)
+## Student Notes 
 - I kept the estimator on page (no modal) so guests see the impact of each selection instantly (reduces form abandonment).  
 - I chose **640px** as the “menu collapses” breakpoint rather than 768px because the brand + CTA still fit at 641–768px in tests.
